@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE6EBD16-BBB1-44A4-8C62-CFD8F83B507F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FastForFloder</RootNamespace>
+    <AssemblyName>FastForFloder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>shendan.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datapass.cs" />
+    <Compile Include="Floderlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Floderlist.Designer.cs">
+      <DependentUpon>Floderlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Modfy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Modfy.Designer.cs">
+      <DependentUpon>Frm_Modfy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotKey.cs" />
+    <Compile Include="iniFile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Win32.cs" />
+    <EmbeddedResource Include="Floderlist.resx">
+      <DependentUpon>Floderlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Modfy.resx">
+      <DependentUpon>Frm_Modfy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lighthouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youhua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\发送到菜单2_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\发送到菜单3_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\发送到菜单56_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\挂机功能整体背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\解除锁定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\解除锁定背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开始挂机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\取消.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图标 %28168%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统优化_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统优化_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统优化_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统优化_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统优化背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1223212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1229423.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1230180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1229440.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1229441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1229449.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1229450.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1230664.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1175785.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1180879.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1187339.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1222488.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1186172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1186191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1186192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1186194.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1186196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update1.bmp" />
+    <None Include="Resources\update_128px_27440_easyicon.net.png" />
+    <None Include="Resources\update_128px_25934_easyicon.net.png" />
+    <None Include="Resources\folder_updates_128px_12022_easyicon.net.png" />
+    <Content Include="shendan.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
