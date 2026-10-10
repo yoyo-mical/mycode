@@ -1,16 +1,16 @@
 # Sim Timing Tools · 公开下载
 
-## 最新：C# 核心精简试用版 v0.4.0
+## 最新：C# 核心精简试用版 v0.4.1
 
-压缩约 0.90 MB，解压约 2.58 MB。需要设备已有 .NET Framework 4.8 与 WebView2。
+压缩约 0.91 MB，解压约 2.64 MB。需要设备已有 .NET Framework 4.8 与 WebView2。
 
 ```text
-https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-Light-net48-v0.4.0.zip
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-Light-net48-v0.4.1.zip
 ```
 
 完整解压后修改 settings.json 的 licensePath，指向现有授权名单，再运行顶层启动工具.exe。原授权名单和原管理工具仍兼容；本版支持 Beta / Standard，并兼容旧 Basic / Pro 名单。使用包不包含操作说明或授权路径文件。
 
-波形生成核心已静态编译成 C#，不再随包提供原 JavaScript 生成引擎。界面和参数预览代码仍为网页代码；编译后的 .NET 程序仍可能被反编译。106 组算法输出及错误拒绝对照检查、授权与调用接口检查通过；Windows 窗口操作仍待实际试用确认。
+波形生成核心已静态编译成 C#，不再随包提供原 JavaScript 生成引擎。界面和参数预览代码仍为网页代码；本版对 C# 内部名称及字符串进行混淆，提高反编译阅读难度，但仍不能保证完全无法还原。混淆后实际 net48 程序的 106 组算法对照、授权签名与通信检查通过，界面资源和配置文件与 v0.4.0 完全相同；Windows 窗口操作仍待实际试用确认。
 
 以下为历史版本记录。
 
