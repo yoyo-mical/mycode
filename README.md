@@ -1,5 +1,23 @@
 # Sim Timing Tools · 公开下载
 
+## 控制流测试版 v0.4.2-CF（与 v0.4.1 分开保留）
+
+组合包约 1.38 MB，包含控制流处理后的使用工具及原 v0.4.1 授权管理工具：
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-Combined-net48-v0.4.2-CF.zip
+```
+
+仅使用工具约 0.91 MB：
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-Light-net48-v0.4.2-CF.zip
+```
+
+完整解压，将原 settings.json 放入“使用工具”中替换，再运行启动工具.exe。设备仍需要已有 .NET Framework 4.8 与 WebView2；原管理密码和名单兼容。
+
+本版在名称/字符串保护之前，对38个适合安全改写的核心方法（187个基本块）实施适度控制流平坦化，未宣称全部方法都处理或无法还原。实际保护后的net48 EXE通过106组算法对照及通信契约/DPI元数据检查。相比v0.4.1包只替换生成工具EXE，界面、配置和授权管理工具逐字节不变。云端交替3轮、每轮20次生成测量：1080行的三轮中位数汇总约为原版1.590秒、测试版1.588秒，差异处于测量波动范围。此为net8加载实际net48程序集的参考数据，不能据此保证Windows速度不变；Windows net48/WebView2启动与操作体验待实机确认。
+
 ## 最新组合包：使用工具 + 新版授权管理 v0.4.1
 
 约 1.38 MB，解压约 3.82 MB。设备需要已有 .NET Framework 4.8 和 WebView2。
