@@ -1,5 +1,15 @@
 # Sim Timing Tools · 公开下载
 
+## 主算法加强精简版 v0.4.4-Priority
+
+单独使用包约 0.92 MB。58 个核心及授权方法加强保护，106 组算法对照和授权拒绝检查通过。原授权管理工具、密钥及名单继续兼容。需要已安装 .NET Framework 4.8 和 WebView2；完整解压，替换原 settings.json，再运行启动工具.exe。Windows 实机效果待试用。
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-Light-net48-v0.4.4-Priority.zip
+```
+
+旧版本保留，不包含管理工具、说明文档或开发文件。
+
 ## 授权加强测试版 v0.4.3-Auth
 
 组合包约 1.38 MB，含授权加强后的使用工具和原新版授权管理工具：
