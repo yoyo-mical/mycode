@@ -1,5 +1,27 @@
 # Sim Timing Tools · 公开下载
 
+## 授权加强测试版 v0.4.3-Auth
+
+组合包约 1.38 MB，含授权加强后的使用工具和原新版授权管理工具：
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-Combined-net48-v0.4.3-Auth.zip
+```
+
+仅使用工具约 0.92 MB：
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-Light-net48-v0.4.3-Auth.zip
+```
+
+完整解压后，把原 settings.json 放入“使用工具”中替换，再运行启动工具.exe；单独使用包则替换根目录的 settings.json。需要已有 .NET Framework 4.8 和 WebView2。原管理工具、密码、密钥和签名名单继续兼容，无需重新签发。
+
+授权判断增加控制流保护；波形核心必须持有已验证的本机授权凭据，生成、帧计算和时间轴入口均检查，界面的授权标志不足以单独开放核心。缓存增加完整性校验；刷新或关闭时撤销旧凭据。读取授权文件仍为启动时及每24小时，其余操作只检查本机缓存；到期时间也在本机检查。
+
+42个核心/授权方法、227个基本块处理通过覆盖检查，实际保护后的net48 EXE通过106组算法输出/拒绝对照，以及缺失/被修改/停用/过期/账号不符的授权和缓存破坏拒绝检查。参考测量单次本机缓存检查约0.004毫秒（云端net8加载实际net48程序集，含反射调用成本）；Windows启动和实际交互仍待试用。界面、settings、启动器与授权管理工具相比v0.4.2-CF逐字节保持不变，只有使用工具主EXE更新。不含源码、调试文件、混淆映射、私钥、密码或说明文档。
+
+保护提高修改与还原门槛，不能保证客户端代码完全无法破解。旧版本保留供对照。
+
 ## 控制流测试版 v0.4.2-CF（与 v0.4.1 分开保留）
 
 组合包约 1.38 MB，包含控制流处理后的使用工具及原 v0.4.1 授权管理工具：
@@ -18,7 +40,7 @@ https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimi
 
 本版在名称/字符串保护之前，对38个适合安全改写的核心方法（187个基本块）实施适度控制流平坦化，未宣称全部方法都处理或无法还原。实际保护后的net48 EXE通过106组算法对照及通信契约/DPI元数据检查。相比v0.4.1包只替换生成工具EXE，界面、配置和授权管理工具逐字节不变。云端交替3轮、每轮20次生成测量：1080行的三轮中位数汇总约为原版1.590秒、测试版1.588秒，差异处于测量波动范围。此为net8加载实际net48程序集的参考数据，不能据此保证Windows速度不变；Windows net48/WebView2启动与操作体验待实机确认。
 
-## 最新组合包：使用工具 + 新版授权管理 v0.4.1
+## 历史组合包：使用工具 + 新版授权管理 v0.4.1
 
 约 1.38 MB，解压约 3.82 MB。设备需要已有 .NET Framework 4.8 和 WebView2。
 
