@@ -1,0 +1,27 @@
+{
+  "zip": "SimTimingTools-WebView2-net48-v0.4.4-Priority.zip",
+  "bytes": 311126260,
+  "sha256": "e7412e2d8e7c9fb137882c21ea715435e281183a39d0003d88c96cd184fd5c0e",
+  "parts": [
+    {
+      "name": "SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.001",
+      "bytes": 94371840,
+      "sha256": "2e12e65b53a66f1422f80cb27418ed8483772d11b5ed695c2edfa958fc9c232e"
+    },
+    {
+      "name": "SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.002",
+      "bytes": 94371840,
+      "sha256": "9299e6e6f737157f461adb25c922a4a999490d209b22ee492a7c8be335b71a94"
+    },
+    {
+      "name": "SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.003",
+      "bytes": 94371840,
+      "sha256": "a8f5cd78077fae8b2229ba95a01cdebe5644b0cc13eede649de5b2cec2118028"
+    },
+    {
+      "name": "SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.004",
+      "bytes": 28010740,
+      "sha256": "00f70f47908cd8fd5dc3e6dbfb864cebeacfd01221ad5d8f9aa3c69b419624cb"
+    }
+  ]
+}

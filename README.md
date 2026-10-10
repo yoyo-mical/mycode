@@ -1,5 +1,19 @@
 # Sim Timing Tools · 公开下载
 
+## 自带 WebView2 版 v0.4.4-Priority
+
+完整ZIP约311MB，解压约708MB；附带用户上传的微软Fixed Runtime 155.0.4283.45 x64，仍需.NET Framework 4.8。原程序及配置字节不变，旧授权工具兼容。Windows实机待试用。
+
+因Release上传接口不可用，ZIP分为四份；下载下列五个文件到同一目录，双击Merge-WebView2-v0.4.4.cmd，校验合并后正常解压ZIP。包内不含说明文档。
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.001
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.002
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.003
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimingTools-WebView2-net48-v0.4.4-Priority.zip.004
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/Merge-WebView2-v0.4.4.cmd
+```
+
 ## 主算法加强精简版 v0.4.4-Priority
 
 单独使用包约 0.92 MB。58 个核心及授权方法加强保护，106 组算法对照和授权拒绝检查通过。原授权管理工具、密钥及名单继续兼容。需要已安装 .NET Framework 4.8 和 WebView2；完整解压，替换原 settings.json，再运行启动工具.exe。Windows 实机效果待试用。
