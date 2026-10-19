@@ -19,3 +19,10 @@ https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/SimTimi
 ```
 
 完整解压使用包，保留原 settings.json 配置后运行启动工具.exe。Windows实际交互待试用。旧包和WebView2分卷已从当前下载目录移除，Git历史未重写。
+
+
+## v0.4.9 UIReview（界面确认版）
+
+新增电性评估界面、三套主题与图标头部；保留原授权和原生波形核心。Windows实际布局待用户确认。
+
+下载：SimTimingTools-Light-net48-v0.4.9-UIReview.zip
