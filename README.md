@@ -1,5 +1,15 @@
 # Sim Timing Tools · 公开下载
 
+## Wuhao Studio · 授权管理 v0.5.2（历史账号 / 账号改名）
+
+添加账号可选择已保存/历史账号；现有账号直接编辑原记录，历史名称只填名称、不自动恢复权限。账号可改名，同步原组织产品记录并保留到期/状态/隐藏版本；重名或其他组织占用时拒绝覆盖，签发后对客户端生效。已导入名单/本机账号自动加入历史，旧工具中尚未导入的名单需先验签导入。保留v0.5.1高DPI适配；本次未调整密钥选择流程。Windows x64 / .NET4.8 / WebView2，完整解压后运行 WuhaoLicenseManager.exe。Windows实机仍待验收。
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/WuhaoStudio-LicenseManager-net48-x64-v0.5.2.zip
+```
+
+SHA256：`06feb6339028cd939c1bdf467e1fdaba8309b54e23c8aa8e8b96968472b8ca9e`
+
 ## Wuhao Studio · 授权管理 v0.5.1（4K 高 DPI 修复）
 
 修复桌面端缺少高DPI支持的问题：PerMonitorV2、主窗口/密码框随Windows缩放、启动窗口不超出当前屏幕工作区。保留原签发流程和名单格式。Windows x64，.NET Framework 4.8 + WebView2，完整解压运行 WuhaoLicenseManager.exe。4K多比例页面布局检查通过，实际Windows清晰度和跨屏切换待机器验收。旧包保留。
