@@ -1,5 +1,17 @@
 # Sim Timing Tools · 公开下载
 
+## Wuhao Studio · 授权管理 v0.5.5
+
+包含已确认的统一字体、左侧去除路径、每产品复制settings双格式及JSON转义、修改管理密码和从原加密备份恢复密钥。签发密钥设置默认收起，点击标题展开；日常签发只输入密码。改密码须验证旧密码，另存新加密文件，原文件仍用旧密码作备份；恢复须知道备份的密码，不生成新密钥，不影响原已签名单或客户端公钥。
+
+Windows x64 / .NET Framework 4.8 / WebView2。完整解压到新文件夹，运行外层“启动授权管理.exe”；保留同目录“程序及运行组件”。沿用原本机管理数据和密钥位置。124项临时密钥核心检查及解压UI/默认收起/4K/剪贴板/密钥管理回归通过，Windows原生对话框及原生产密钥仍待实机确认。包不含私钥、密码、真实账号或测试后门。旧包保留。
+
+```text
+https://raw.githubusercontent.com/yoyo-mical/mycode/sim-timing-downloads/WuhaoStudio-LicenseManager-net48-x64-v0.5.5.zip
+```
+
+SHA256：`b0e45744cfa8838b0605d502b1a761e2671f038bad80ac45150a2588dd3698c3`
+
 ## Wuhao Studio · 授权管理 v0.5.4（简洁目录）
 
 参照Sim Timing，完整解压到新文件夹后，外层只有“启动授权管理.exe”和“程序及运行组件”。双击外层启动程序，主程序、DLL、config、网页资源全部保存在组件文件夹中；两项需放在同一目录，不要单独复制启动器。保留v0.5.3密钥设置和签发流程，沿用原本机管理数据及密钥位置。Windows x64 / .NET4.8 / WebView2。构建及实际解压包的桥接/4K回归通过，Windows双击启动待实机确认。原包保留。
